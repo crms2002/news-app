@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../global/style/fonts/Roboto/Roboto-Light.ttf);
+}
+
+.container {
+    overflow: none;
+}
+
+.nav{
+    width: 100vw;
+    height: 150px;
+
+    font-family: Roboto;
+
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+    vertical-align: middle;
+    align-items: center;
+}
+
+.navButtons {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.navButton{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+
+    transition: background-color 200ms;
+}
+
+.navButton:hover {
+    background-color: aliceblue;
+}
