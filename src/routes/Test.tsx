@@ -1,7 +1,9 @@
 import React from "react";
 import ArticleContainer from "../components/ArticleContainer/ArticleContainer";
+import BigArticleContainer from "../components/BigArticleContainer/BigArticleContainer";
+import Article from "../utils/interfaces/article";
 
-const article = {
+const article : Article = {
     "source": {
         "id": "the-washington-post",
         "name": "The Washington Post"
@@ -12,12 +14,15 @@ const article = {
     "url": "https://www.washingtonpost.com/world/2022/04/05/russia-ukraine-war-news-zelensky-live-updates/",
     "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/04-04-2022/t_13fba8bb4d8546e7a48bf4bb70bfbdcf_name_94239094_b458_11ec_8358_20aa16355fb4_scaled.jpg&w=1440",
     "publishedAt": "2022-04-05T08:26:15Z",
-    "content": "The International Committee of the Red Cross, which has for days been struggling to enter the devastated southern city of Mariupol to help evacuate citizens, said Tuesday that members of its team who… [+1245 chars]"
+    "content": "The International Committee of the Red Cross, which has for days been struggling to enter the devastated southern city of Mariupol to help evacuate citizens, said Tuesday that members of its team who… lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum"
 }
 
 export const Test = () => {
     return (
-        <ArticleContainer article={article}/>  
+        <div>
+            <button>Abrir</button>
+            <BigArticleContainer article={article}/>
+        </div>
     );
 }
 

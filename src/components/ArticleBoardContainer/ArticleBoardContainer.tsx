@@ -28,7 +28,9 @@ export const ArticleBoardContainer = () => {
             {
                 articles?.map((article, index) => {
                     return (
-                        <ArticleContainer key={index} article={article} />
+                        <div className={styles.ArtHolder}>
+                            <ArticleContainer key={index} article={article} />
+                        </div>
                     );
                 })
             }

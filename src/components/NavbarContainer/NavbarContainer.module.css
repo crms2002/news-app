@@ -1,0 +1,37 @@
+.nav{
+    width: 100vw;
+    height: 150px;
+
+    font-family: Roboto;
+
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+}
+
+
+.navButtons {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.navButton{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    text-align: center;
+
+    transition: background-color 200ms;
+}
+
+.navButton:hover {
+    background-color: aliceblue;
+}
